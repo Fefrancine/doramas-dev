@@ -22,6 +22,11 @@ const routes = [
     component: () => import('../views/MovieDetailsView.vue'),
     props: true,
   },
+  {
+    path: '/tvDetails/:tvShowId',
+    name: "tvDetails",
+    component: () => import('../views/TvDetails.vue')
+  }
 ];
 
 const router = createRouter({
